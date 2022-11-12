@@ -53,8 +53,7 @@ impl Component for Steadylearner {
 
 impl Renderable<Steadylearner> for Steadylearner {
     fn view(&self) -> Html<Self> {
-        let src = "https://www.steadylearner.com/static/images/brand/code.png".to_string(); // payload here
-        let class = "width-two-and-a-half theme-white border-round margin-right-half hover cursor-pointer";
+         let class = "width-two-and-a-half theme-white border-round margin-right-half hover cursor-pointer";
 
         html! {
             <span 
@@ -63,13 +62,11 @@ impl Renderable<Steadylearner> for Steadylearner {
                 <img 
                     class=class,
                     title="Click this to use modal.",
-                    src="https://www.steadylearner.com/static/images/code/Rust.svg",
                     onclick=|_| Msg::Set(src.clone()),
                 />
                 <a
                     class=("no-text-decoration", "white"),
-                    href="https://www.steadylearner.com/blog/search/Rust",
-                    title="Click it to learn how to code this.",
+                     title="Click it to learn how to code this.",
                     target="_blank",
                     rel="noopener noreferrer",
                 >
